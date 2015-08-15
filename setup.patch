@@ -1,0 +1,13 @@
+--- a/setup.py	2013-01-20 11:00:36.976347320 -0500
++++ b/setup.py	2013-01-20 11:02:22.476016119 -0500
+@@ -24,9 +24,7 @@
+ 	license = 'GPL',
+ 	data_files=[("share/everygui/ui", glob.glob("ui/*.glade")),
+ 			("bin", ["everygui", "egdesign"]),
+-			("src/everygui", glob.glob("src/*")),
++			("lib/python2.7/site-packages/everygui", glob.glob("src/*")),
+ 			("share/everygui/docs", ["COPYING","LGPL","README","ChangeLog","AUTHORS","TODO"]),
+ 			("share/everygui/egconfig", glob.glob("egconfig/*.egd"))]
+ 	)
+-
+-os.chmod("/usr/share/everygui/egconfig", 0777)
